@@ -32,8 +32,8 @@ class PortfolioController extends Controller
        $details['techintro'] = $this->portfolio->techIntro;
        $details['techArray'] = $this->portfolio->techArray;
        $details['phpText'] = $this->portfolio->phpText;
-       $details['education'] = $this->portfolio->education;
-       $details['experience'] = $this->portfolio->expArray;
+       $details['education'] = array_reverse($this->portfolio->education);
+       $details['experience'] = array_reverse($this->portfolio->expArray);
        $details['portfolioUserEmail'] = $this->portfolio->portfolioUserEmail;
        $portFolioData = (object) $details;
        return view('portfolio',compact('portFolioData'));
