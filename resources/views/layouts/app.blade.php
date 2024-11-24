@@ -29,7 +29,7 @@
                             <a onclick="window.location.reload();">{{ $portFolioData->username }}</a>
                         </h2>
                         <div class="header-oneliner">
-                            <p style="color: #ffbd39; font-family: cursive;font-size: 15px">{{ $portFolioData->oneliner }} <span style="color: red">&hearts;</span></p>
+                            <p style="color: #ffbd39; font-family: cursive;font-size: 15px">{{ $portFolioData->oneliner }} </p>
                         </div>
                     </div>
                     <div class="mobile-menu"></div>
